@@ -13,6 +13,13 @@
 When your AI Agent (like OpenClaw) faces missing capabilities or complex workflows, **Skill-Pathfinder** acts as its central nervous system. Instead of generating "hallucinated" answers, it strictly enforces a **"Skill First"** principle: 
 It automatically breaks down complex intents, searches your local ecosystem for missing tools, downloads new skills from global repositories (ClawHub, MCP Market, etc.), and silently scans them for security risks before asking for your permission to install.
 
+### 📡 Runtime & Permissions (Security Declaration)
+To orchestrate tools dynamically and perform global searches, this skill explicitly declares the following requirements:
+- **Runtime Required**: `Node.js` (`npm`/`npx`) and `Python 3` must be installed.
+- **Filesystem Access**: Read access to `~/.agents/skills` to evaluate the current baseline.
+- **Network Access**: Internet access to hub APIs (ClawHub, MCP, etc.) for skill discovery.
+- *Note on Security*: Before downloading and recommending any external code, this skill enforces a strict local security scan using `npx agentguard scan` via a secured python wrapper.
+
 ---
 
 ## ✨ Key Features

@@ -11,15 +11,17 @@ def scan_skill(target_url):
     """
     print(f"[*] 正在启动 AgentGuard 静默扫描目标: {target_url} ...")
     
+    # [SECURITY FIX]: 移除 shell=True，改用安全的列表传参，防止针对 target_url 的命令注入攻击
+    command = ["npx", "agentguard", "scan", target_url]
+    
     try:
-        # 执行 agentguard 深度扫描。为了让脚本自动处理，我们尝试捕获输出。
-        # 注意：这里我们使用 --json (如果 agentguard 支持相关标志) 或者简单解析标准输出。
-        # 当前我们模拟拦截逻辑。真实环境中 npx agentguard scan <url> 如果有严重警报通常会存在 EXIT_CODE != 0。
+        # 捕获输出进行严格解析
+        # 真实环境中 npx agentguard scan <url> 如果有严重警报通常会存在 EXIT_CODE != 0。
         result = subprocess.run(
-            ["npx", "--yes", "agentguard", "scan", target_url],
+            command,
             capture_output=True,
             text=True,
-            shell=True # Windows下调用npx需要shell=True
+            check=False
         )
         
         output = result.stdout.lower() + result.stderr.lower()

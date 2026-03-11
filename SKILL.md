@@ -6,6 +6,13 @@ license: Complete terms in LICENSE.txt
 
 # 技能探路者 (Skill-Pathfinder)
 
+## 📡 运行依赖与授权清单 (Runtime & Permissions)
+为了提供全局搜索和安全扫描能力，本技能需声明以下依赖和白名单权限：
+- **Runtime Required**: 本地必须安装 `Node.js` (`npm` / `npx`) 和 `Python 3`。
+- **Filesystem Access**: 需要读取 `~/.agents/skills` 目录以诊断当前环境。
+- **Network Access**: 需要访问互联网以查询 ClawHub、Smithery 等外部源。
+- *声明：为了保障安全，所有的未知下载代码都必须通过后端的安全脚本预审。*
+
 ## 概述
 作为整个系统的超级专家会诊中枢，`Skill-Pathfinder` 的首要目的是在官方工具无力解决或遇到复杂跨领域需求时，提供深度的“补漏”与规划。
 **角色定位与原则：**
