@@ -31,8 +31,9 @@
 ## 4. 每日精选推荐定时任务 (Daily Recommendation Schedule)
 
 ### 触发条件
-当用户在安装/更新后的 `[AGENT POST-INSTALL HOOK]` 流程中同意开启每日推荐时，在 Memory 中写入：
-`Skill-Pathfinder 每日推荐定时任务: 已启用, 推送时间: 用户所在地区每日 10:00`
+当用户在安装/更新后的 `[AGENT POST-INSTALL HOOK]` 流程中同意开启每日推荐时，Agent 必须执行以下闭环操作：
+1. **记忆标记**：在 Memory 中写入 `Skill-Pathfinder 每日推荐定时任务: 已启用, 推送时间: 10:00 (Local) / 2:00 (UTC)`。
+2. **系统注册**：**立刻调用 OpenClaw/系统能力**，注册一个名为 `Skill-Pathfinder 每日推荐` 的定时任务，执行计划设定为 `每天 2:00 UTC`。
 
 ### 推送规则
 - **推送时间**：用户偏好地区的**每天早上 10:00**
