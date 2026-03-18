@@ -203,7 +203,7 @@ Whenever you (the AI Agent) modify or update code/documentation within this `Ski
 
 **[内部逻辑 C] 检查每日推荐状态（条件触发）**
 ⚠️ **执行前置条件**：只有当 [内部逻辑 B] 的核对结果为「全部已安装 (9/9)」时，才执行本逻辑；若存在任何缺失技能，**跳过本逻辑 C，不执行任何检查**。
-满足前置条件后，在后台检查 Memory 中是否已有 `Skill-Pathfinder 每日推荐定时任务` 的记录。
+满足前置条件后，在后台检查 Memory 中是否已有 `Skill-SafeFinder 每日推荐定时任务` 的记录。
 
 **[用户可见的唯一输出] 请严格按照以下【由上至下】的顺序组合成一条回复：**
 
@@ -252,3 +252,5 @@ Whenever you (the AI Agent) modify or update code/documentation within this `Ski
 ### 核心路由补充细节 (Routing Details)
 「强制拦截序列」的扩展说明（模糊意图语义匹配、上下文感知参数预提、多任务拆解编排等深层逻辑）：
 👉 **[references/routing.md](references/routing.md)**
+uting.md)**
+ences/routing.md](references/routing.md)**
