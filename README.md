@@ -3,15 +3,15 @@
   <strong>English</strong> | <a href="./README_zh-CN.md">简体中文</a>
 </div>
 
-# 🌐 Skill-Pathfinder
+# 🌐 Skill-Safefinder
 
 **A Meta-Skill Engine for AI Agents: Intelligent Routing, Global Discovery, and Visible Security Guard.**
 
 ---
 
-## 🎯 What is Skill-Pathfinder?
+## 🎯 What is Skill-Safefinder?
 
-When your AI Agent (like OpenClaw) encounters a missing capability or a complex long-chain task, **Skill-Pathfinder** takes over as the central orchestrator. To prevent LLM hallucinations, it strictly enforces the **Skill First** principle:
+When your AI Agent (like OpenClaw) encounters a missing capability or a complex long-chain task, **Skill-Safefinder** takes over as the central orchestrator. To prevent LLM hallucinations, it strictly enforces the **Skill First** principle:
 It breaks down complex intents, diagnoses local component gaps, automatically retrieves missing extension packages from global open-source communities (ClawHub, MCP Market, etc.), and runs a strict backend **visible security code pre-check and risk warning** before presenting them to you!
 
 ### 📡 Runtime & Permissions (Security Declaration)
@@ -47,12 +47,12 @@ To orchestrate tools dynamically and perform global searches, this skill explici
 ### 💡 One-Click Install (Recommended)
 Copy and send the following **complete instruction** to your AI Agent:
 
-> *"Please install skill-pathfinder: run `npx --yes clawhub install skill-pathfinder`. After the terminal confirms success, it is recommended to read its `SKILL.md` and execute the `[AGENT POST-INSTALL HOOK]` inside it for initialization. Then report back to me."*
+> *"Please install skill-safefinder: run `npx --yes clawhub install skill-safefinder`. After the terminal confirms success, it is recommended to read its `SKILL.md` and execute the `[AGENT POST-INSTALL HOOK]` inside it for initialization. Then report back to me."*
 
 ### Manual Install
-1. **Download the Package:** Download the `Skill-Pathfinder.skill` archive from the Releases page or ClawHub.
-2. **Mount to your Agent:** Copy the folder into your global agent directory (e.g., `~/.agents/skills/Skill-Pathfinder`).
-3. **Tell your AI:** After mounting, say to your Agent: *"I just installed Skill-Pathfinder. Read its SKILL.md and run the `[AGENT POST-INSTALL HOOK]`."*
+1. **Download the Package:** Download the `Skill-Safefinder.skill` archive from the Releases page or ClawHub.
+2. **Mount to your Agent:** Copy the folder into your global agent directory (e.g., `~/.agents/skills/Skill-Safefinder`).
+3. **Tell your AI:** After mounting, say to your Agent: *"I just installed Skill-Safefinder. Read its SKILL.md and run the `[AGENT POST-INSTALL HOOK]`."*
 
 ---
 

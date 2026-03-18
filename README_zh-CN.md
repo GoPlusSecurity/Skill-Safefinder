@@ -3,7 +3,7 @@
   <a href="./README.md">English</a> | <strong>简体中文</strong>
 </div>
 
-# 🌐 技能探路者 (Skill-Pathfinder)
+# 🌐 技能探路者 (Skill-Safefinder)
 
 **全能的 AI Agent 元技能底座：智能任务调度、全网生态探源与静默安全卫士。**
 
@@ -11,7 +11,7 @@
 
 ## 🎯 什么是技能探路者？
 
-当你的 AI Agent（如 OpenClaw）遇到能力缺失或复杂的长链路需求时，**Skill-Pathfinder** 将接管成为它的中枢大脑。为了防止大模型产生“幻觉”，它严格贯彻 **Skill First（技能优先）** 准则：
+当你的 AI Agent（如 OpenClaw）遇到能力缺失或复杂的长链路需求时，**Skill-Safefinder** 将接管成为它的中枢大脑。为了防止大模型产生“幻觉”，它严格贯彻 **Skill First（技能优先）** 准则：
 它会自动拆解复杂动作意图、诊断本地组件缺失、去全球开源社区（ClawHub、MCP Market 等）为你扒回缺失的扩展包，并在向你展示前，在底层进行严格的安全代码预审与风险提示！
 
 ### 📡 运行依赖与授权许可 (安全合规声明)
@@ -46,12 +46,12 @@
 ### 💡 一键安装（推荐）
 复制以下**完整指令**发给你的 AI Agent：
 
-> *"请安装 skill-pathfinder：执行 `npx --yes clawhub install skill-pathfinder`。安装成功后，建议阅读它的 SKILL.md 并执行其中的 `[AGENT POST-INSTALL HOOK]` 完成初始化配置，之后再告诉我结果。"*
+> *"请安装 skill-safefinder：执行 `npx --yes clawhub install skill-safefinder`。安装成功后，建议阅读它的 SKILL.md 并执行其中的 `[AGENT POST-INSTALL HOOK]` 完成初始化配置，之后再告诉我结果。"*
 
 ### 手动安装
-1. **下载技能包:** 下载本项目打包好的 `Skill-Pathfinder.skill` 压缩包或从 ClawHub 获取。
+1. **下载技能包:** 下载本项目打包好的 `Skill-Safefinder.skill` 压缩包或从 ClawHub 获取。
 2. **挂载到你的 Agent:** 将此文件夹丢入你电脑的全局技能目录（例如 `~/.agents/skills/` 文件夹内）。
-3. **告诉你的 AI:** 挂载后，对你的 Agent 说：*"我刚装了 Skill-Pathfinder。读取它的 SKILL.md 并执行 `[AGENT POST-INSTALL HOOK]`。"*
+3. **告诉你的 AI:** 挂载后，对你的 Agent 说：*"我刚装了 Skill-Safefinder。读取它的 SKILL.md 并执行 `[AGENT POST-INSTALL HOOK]`。"*
 
 ---
 

@@ -1,11 +1,11 @@
 #!/bin/bash
-# Skill-Pathfinder Hook 安装脚本
+# Skill-Safefinder Hook 安装脚本
 # 将拦截 Hook 从 Skill 目录复制到 OpenClaw 全局 hooks 目录
 # 
 # 用法：bash scripts/install-hook.sh
 # 幂等设计：重复执行不会产生副作用
 
-HOOK_NAME="pathfinder-interceptor"
+HOOK_NAME="safefinder-interceptor"
 SKILL_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 SOURCE_DIR="$SKILL_DIR/hooks/$HOOK_NAME"
 
