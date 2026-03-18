@@ -1,7 +1,7 @@
 ---
 name: safefinder-interceptor
 description: "Skill-Safefinder 的系统级拦截 Hook。在每次模型推理前自动注入任务拦截规则，确保操作类任务必须先搜索可用 Skill。"
-homepage: https://github.com/hu4891/Skill-Safefinder
+homepage: https://github.com/JasperHye/Skill-Safefinder
 ---
 
 # Safefinder Interceptor Hook
