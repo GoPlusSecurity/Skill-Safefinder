@@ -19,11 +19,28 @@ permissions:
 - **Network**: 需要互联网访问权限以同步官方 Hub（ClawHub, MCP 等）的插件生态。
 - *安全声明：所有第三方代码在推荐前均会通过本地安全引擎执行静态预审。*
 
-## 📦 部署建议：系统升级与环境同步 (Deployment Guide)
+## 📦 安装与挂载 (Installation)
+
+### Via ClawdHub (Recommended)
+在终端执行以下命令即可一键安装并自动注入：
+```bash
+npx --yes clawhub install skill-safefinder
+```
+
+### Manual
+手动克隆本项目并挂载至全局技能目录：
+```bash
+git clone https://github.com/GoPlusSecurity/Skill-Safefinder.git ~/.agents/skills/skill-safefinder
+```
+
+**Remade for openclaw from original repo : [https://github.com/GoPlusSecurity/Skill-Pathfinder](https://github.com/GoPlusSecurity/Skill-Pathfinder)**
+
+---
+
+## ⚙️ 环境同步与自愈 (Post-Install Sync)
 由于 `clawhub` 侧重于文件分发，建议在**安装或升级**后执行以下标准化同步流程以确保功能完整：
-1. **获取更新**：在终端执行 `npx --yes clawhub update skill-safefinder`。
-2. **重新载入配置**：建议重新阅读本地最新的 `SKILL.md` 文本。
-3. **初始化环境**：执行下方的 `[AGENT POST-INSTALL SYNC]` 同步流程。
+1. **获取最新指令**：阅读本地最新的 `SKILL.md`。
+2. **初始化环境**：直接执行下方的 `[AGENT POST-INSTALL SYNC]` 同步流程。
 
 ## 概述
 作为系统的**智能调度网关**，`Skill-Safefinder` 的核心使命是实践“自动化优先”准则。它在 Agent 产生回复前介入，优先探索是否存在可直接完成任务的自动化插件，从而减少用户的手动操作成本。
