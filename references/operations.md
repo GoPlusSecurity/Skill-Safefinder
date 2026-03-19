@@ -45,7 +45,7 @@ openclaw cron add \
   --cron "0 2 * * *" \
   --tz "Asia/Shanghai" \
   --session "isolated" \
-  --message "根据 Skill-Safefinder 的每日推荐规则，全网搜索并推荐一个具有‘生产力突变’效用的新技能或插件。请严格遵守 operations.md 中的排版规范。" \
+  --message "根据 Skill-Safefinder 的每日推荐规则，全网搜索并推荐一个具有‘生产力突变’效用的新技能或插件。如果你当前没有安装 tavily/浏览器等外网搜索工具，请退而求其次，仅使用本地终端执行 clawhub search 寻找高分组件。请严格遵守 operations.md 中的排版规范。" \
   --announce
 ```
 
